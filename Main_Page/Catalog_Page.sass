@@ -26,16 +26,6 @@ $white_color: #fff
         align-items: $center_align
         top: 29px
 
-@mixin For_Text()
-        position: $position
-        font-family: $font_roboto
-        font-style: normal
-        font-weight: 400
-        font-size: 24px
-        line-height: 28px
-        text-align: justify
-        color: $black_color
-
 header
     position: $position 
     width: 1510px   
@@ -70,54 +60,3 @@ header
 .About_Us_page_button
     @include nav_bar_buttons()
     left: 1028px
-
-.About_Music
-    @include For_Text()
-    width: 733px
-    height: 252px
-    left: 124px
-    top: 162px
-
-.Musical_Instruments
-    @include For_Text()
-    width: 588px
-    height: 252px
-    left: 865px
-    top: 470px
-
-.About_Store
-    @include For_Text()
-    width: 588px
-    height: 334px
-    left: 88px
-    top: 851px
-    
-
-.Photo_1
-    position: $position
-    width: 317px
-    height: 310px
-    left: 1000px
-    top: 133px
-
-.Photo_2
-    position: $position
-    width: 650px
-    height: 263px
-    left: 88px
-    top: 473px
-
-.Photo_3
-    position: $position
-    width: 626px
-    height: 418px
-    left: 738px
-    top: 776px
-    
-@keyframes changing__color_of_button
-    0%            
-        background: $black_color
-        color: $white_color
-    100%
-        background: $white_color
-        color: $black_color

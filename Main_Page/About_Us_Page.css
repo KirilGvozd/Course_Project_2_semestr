@@ -12,6 +12,47 @@ a {
   text-decoration: none;
 }
 
+.First_Underline {
+  position: absolute;
+  left: 648px;
+  top: 220px;
+}
+
+.Second_Underline {
+  position: absolute;
+  left: 614px;
+  top: 820px;
+}
+
+.Third_Underline {
+  position: absolute;
+  left: 547px;
+  top: 1812px;
+}
+
+.About_Us_Section {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  text-align: center;
+  width: 679px;
+  height: 338px;
+  left: 165px;
+  top: 264px;
+}
+
+.Photo_1 {
+  position: absolute;
+  border-radius: 46px;
+  width: 507px;
+  height: 338px;
+  left: 872px;
+  top: 264px;
+}
+
 .logo {
   position: absolute;
   width: 206px;
@@ -103,6 +144,48 @@ a {
 .About_Us_page_button:hover {
   -webkit-animation: changing__color_of_button 0.3s linear forwards;
           animation: changing__color_of_button 0.3s linear forwards;
+}
+
+.First_Title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  text-align: center;
+  width: 201px;
+  height: 10px;
+  left: 652px;
+  top: 144px;
+}
+
+.Second_Title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  text-align: center;
+  width: 274px;
+  height: 40px;
+  left: 614px;
+  top: 742px;
+}
+
+.Third_Title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  text-align: center;
+  width: 408px;
+  height: 43px;
+  left: 547px;
+  top: 1736px;
 }
 
 @-webkit-keyframes changing__color_of_button {

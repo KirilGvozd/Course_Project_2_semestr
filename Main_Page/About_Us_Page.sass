@@ -26,6 +26,16 @@ $white_color: #fff
         align-items: $center_align
         top: 29px
 
+@mixin For_Text()
+        font-family: $font_roboto
+        font-style: normal
+        font-weight: 400
+        font-size: 36px
+        line-height: 42px
+        position: $position
+        text-align: center
+
+
 header
     position: $position 
     width: 1510px   
@@ -36,6 +46,36 @@ header
 
 a
     text-decoration: none
+
+.First_Underline
+    position: $position
+    left: 648px
+    top: 220px
+
+.Second_Underline
+    position: $position
+    left: 614px
+    top: 820px
+
+.Third_Underline
+    position: $position
+    left: 547px
+    top: 1812px
+
+.About_Us_Section
+    @include For_Text()
+    width: 679px
+    height: 338px
+    left: 165px
+    top: 264px
+
+.Photo_1
+    position: $position
+    border-radius: 46px
+    width: 507px
+    height: 338px
+    left: 872px
+    top: 264px
 
 .logo
     position: $position
@@ -64,6 +104,26 @@ a
     @include nav_bar_buttons()
     left: 1028px
 
+.First_Title 
+    @include For_Text()
+    width: 201px
+    height: 10px
+    left: 652px
+    top: 144px
+
+.Second_Title
+    @include For_Text()
+    width: 274px
+    height: 40px
+    left: 614px
+    top: 742px
+
+.Third_Title
+    @include For_Text()
+    width: 408px
+    height: 43px
+    left: 547px
+    top: 1736px
 
 @keyframes changing__color_of_button
     0%            

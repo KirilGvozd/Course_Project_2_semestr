@@ -12,6 +12,13 @@ a {
   text-decoration: none;
 }
 
+iframe {
+  position: absolute;
+  border-radius: 46px;
+  top: 940px;
+  left: 340px;
+}
+
 .First_Underline {
   position: absolute;
   left: 648px;
@@ -27,7 +34,7 @@ a {
 .Third_Underline {
   position: absolute;
   left: 547px;
-  top: 1812px;
+  top: 1612px;
 }
 
 .About_Us_Section {
@@ -185,7 +192,90 @@ a {
   width: 408px;
   height: 43px;
   left: 547px;
-  top: 1736px;
+  top: 1536px;
+}
+
+.Adress {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  text-align: center;
+  height: 49px;
+  width: 1154px;
+  left: 186px;
+  top: 841px;
+}
+
+.Phone_Icon {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  top: 1706px;
+  left: 216px;
+}
+
+.Telegram_Icon {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  top: 1706px;
+  left: 687px;
+}
+
+.Gmail_Icon {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  top: 1706px;
+  left: 1129px;
+}
+
+.Phone {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  text-align: center;
+  position: absolute;
+  height: 200px;
+  width: 299px;
+  left: 120px;
+  top: 1842px;
+}
+
+.Telegram {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  text-align: center;
+  position: absolute;
+  height: 100px;
+  width: 196px;
+  left: 645px;
+  top: 1842px;
+}
+
+.Gmail {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  text-align: center;
+  position: absolute;
+  height: 100px;
+  width: 414px;
+  left: 998px;
+  top: 1842px;
 }
 
 @-webkit-keyframes changing__color_of_button {

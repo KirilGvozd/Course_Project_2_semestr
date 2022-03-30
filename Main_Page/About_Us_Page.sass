@@ -35,6 +35,12 @@ $white_color: #fff
         position: $position
         text-align: center
 
+@mixin For_Icons()
+        position: $position
+        width: 128px
+        height: 128px
+        top: 1706px
+
 
 header
     position: $position 
@@ -46,6 +52,12 @@ header
 
 a
     text-decoration: none
+
+iframe
+    position: $position
+    border-radius: 46px
+    top: 940px
+    left: 340px 
 
 .First_Underline
     position: $position
@@ -60,7 +72,7 @@ a
 .Third_Underline
     position: $position
     left: 547px
-    top: 1812px
+    top: 1612px
 
 .About_Us_Section
     @include For_Text()
@@ -123,7 +135,51 @@ a
     width: 408px
     height: 43px
     left: 547px
-    top: 1736px
+    top: 1536px
+
+.Adress
+    @include For_Text()
+    height: 49px
+    width: 1154px
+    left: 186px
+    top: 841px
+
+.Phone_Icon
+    @include For_Icons()
+    left: 216px
+
+.Telegram_Icon
+    @include For_Icons()
+    left: 687px
+
+.Gmail_Icon
+    @include For_Icons()
+    left: 1129px
+
+.Phone
+    @include For_Text()
+    position: $position
+    height: 200px
+    width: 299px
+    left: 120px
+    top: 1842px
+
+.Telegram
+    @include For_Text()
+    position: $position
+    height: 100px
+    width: 196px
+    left: 645px
+    top: 1842px
+
+.Gmail
+    @include For_Text()
+    position: $position
+    height: 100px
+    width: 414px
+    left: 998px
+    top: 1842px
+
 
 @keyframes changing__color_of_button
     0%            

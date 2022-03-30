@@ -30,6 +30,34 @@ a {
   color: #fff;
 }
 
+figure .Photo_1 {
+  position: absolute;
+  width: 230px;
+  height: 349px;
+  left: 88px;
+  top: 163px;
+}
+
+.Acoustic_Guitars {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 187px;
+  height: 15px;
+  left: 110px;
+  top: 530px;
+}
+
 .Main_page_button {
   padding: 5px;
   font-family: "Roboto", sans-serif;

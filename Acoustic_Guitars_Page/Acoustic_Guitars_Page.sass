@@ -6,7 +6,9 @@ $font_roboto: 'Roboto', sans-serif
 $black_color: #000
 $white_color: #fff
 $for_first_row: 138px
-
+$for_second_row: 884px
+$for_first_row_figcaptions: 733px
+$for_second_row_figcaptions: 1473px
 
 @mixin hover_code()
         &:hover
@@ -37,7 +39,7 @@ $for_first_row: 138px
 
 header
     position: $position 
-    width: 1536px   
+    width: 1517px   
     height: 107px
     left: 0px
     top: 0px
@@ -48,9 +50,8 @@ a
 
 figcaption
     position: absolute
-    width: 152px
     height: 58px
-    top: 733px
+    width: 350px
     font-family: 'Roboto'
     font-style: normal
     font-weight: 400
@@ -59,11 +60,6 @@ figcaption
     display: flex
     align-items: center
     text-align: center
-
-.First_Guitar
-    left: 168px
-.Second_Guitar
-    left: 685px
 
 
 .logo
@@ -97,11 +93,32 @@ figcaption
     @include For_Images()
     left: 94px
     top: $for_first_row
-
 .Second_Photo
     @include For_Images()
     left: 608px
     top: $for_first_row
+.Third_Photo
+    @include For_Images()
+    left: 1122px
+    top: $for_first_row
+.Fourth_Photo
+    @include For_Images()
+    left: 94px
+    top: $for_second_row
+
+.First_Guitar
+    top: $for_first_row_figcaptions
+    left: 148px
+.Second_Guitar
+    top: $for_first_row_figcaptions
+    left: 650px
+.Third_Guitar
+    top: $for_first_row_figcaptions
+    left: 1175px
+.Fourth_Guitar
+    top: $for_second_row_figcaptions
+    left: 67px
+
 
 
 @keyframes changing__color_of_button

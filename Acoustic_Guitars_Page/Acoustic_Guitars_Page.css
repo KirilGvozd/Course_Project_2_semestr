@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 header {
   position: absolute;
-  width: 1536px;
+  width: 1517px;
   height: 107px;
   left: 0px;
   top: 0px;
@@ -14,9 +14,8 @@ a {
 
 figcaption {
   position: absolute;
-  width: 152px;
   height: 58px;
-  top: 733px;
+  width: 350px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -29,14 +28,6 @@ figcaption {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-}
-
-.First_Guitar {
-  left: 168px;
-}
-
-.Second_Guitar {
-  left: 685px;
 }
 
 .logo {
@@ -148,6 +139,44 @@ figcaption {
   border: 2px solid #000000;
   left: 608px;
   top: 138px;
+}
+
+.Third_Photo {
+  position: absolute;
+  width: 300px;
+  height: 583px;
+  border: 2px solid #000000;
+  left: 1122px;
+  top: 138px;
+}
+
+.Fourth_Photo {
+  position: absolute;
+  width: 300px;
+  height: 583px;
+  border: 2px solid #000000;
+  left: 94px;
+  top: 884px;
+}
+
+.First_Guitar {
+  top: 733px;
+  left: 148px;
+}
+
+.Second_Guitar {
+  top: 733px;
+  left: 650px;
+}
+
+.Third_Guitar {
+  top: 733px;
+  left: 1175px;
+}
+
+.Fourth_Guitar {
+  top: 1473px;
+  left: 67px;
 }
 
 @-webkit-keyframes changing__color_of_button {

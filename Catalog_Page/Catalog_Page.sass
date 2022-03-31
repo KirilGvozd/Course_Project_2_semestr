@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$position: absolute
+$center_align: center
+$font_roboto: 'Roboto', sans-serif
+$black_color: #000
+$white_color: #fff
+$for_first_row_images: 163px
+$for_first_row_figcaption: 530px
+$for_second_row_images: 610px
+$for_second_row_figcaption: 980px
+
+
+@mixin hover_code()
+        &:hover
+            animation: changing__color_of_button 0.3s linear forwards
+
+@mixin nav_bar_buttons()
+        @include hover_code()
+        padding: 5px
+        font-family: $font_roboto
+        font-size: 24pt
+        position: $position
+        width: 241px
+        height: 55px
+        background: $black_color
+        border: 2px solid $white_color
+        box-sizing: border-box
+        color: $white_color
+        text-align: $center_align
+        align-items: $center_align
+        top: 29px
+    
+@mixin For_Photos()
+        position: absolute
+        width: 230px
+        height: 349px
+
+@mixin For_Figcaption()
+        font-family: $font_roboto
+        font-style: normal
+        font-weight: 700
+        font-size: 24px
+        line-height: 28px
+        display: flex
+        align-items: center
+        text-align: center
+        position: absolute
+        width: 190px
+        height: 15px
+
+
+header
+    position: $position 
+    width: 1510px   
+    height: 107px
+    left: 0px
+    top: 0px
+    background: $black_color
+
+a
+    text-decoration: none
+
+.logo
+    position: $position
+    width: 206px
+    height: 53px
+    left: 47px
+    top: 35px
+    font-family: $font_roboto
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 42px
+    align-items: center
+    text-align: $center_align
+    color: $white_color
+
+figure
+    .Photo_1
+        @include For_Photos()
+        left: 101px
+        top: $for_first_row_images
+    .Photo_2
+        @include For_Photos()
+        left: 474px
+        top: $for_first_row_images
+    .Photo_3
+        @include For_Photos()
+        left: 847px
+        top: $for_first_row_images
+    .Photo_4
+        @include For_Photos()
+        left: 1220px
+        top: $for_first_row_images
+    .Photo_5
+        @include For_Photos()
+        left: 101px
+        top: $for_second_row_images
+    .Photo_6
+        @include For_Photos()
+        left: 474px
+        top: $for_second_row_images
+    .Photo_7
+        @include For_Photos()
+        left: 847px
+        top: $for_second_row_images
+    .Photo_8
+        @include For_Photos()
+        left: 1220px
+        top: $for_second_row_images
+
+.Acoustic_Guitars
+    @include For_Figcaption()
+    left: 123px
+    top: $for_first_row_figcaption
+
+.Electric_Guitars
+    @include For_Figcaption()
+    left: 495px
+    top: $for_first_row_figcaption
+
+.Acoustic_Bass
+    @include For_Figcaption()
+    left: 870px
+    top: $for_first_row_figcaption
+
+.Bass_Guitars
+    @include For_Figcaption()
+    left: 1275px
+    top: $for_first_row_figcaption
+
+.Drum_Kit
+    @include For_Figcaption()
+    left: 123px
+    top: $for_second_row_figcaption
+
+.Guitar_Amps
+    @include For_Figcaption()
+    left: 495px
+    top: $for_second_row_figcaption
+
+.Picks
+    @include For_Figcaption()
+    left: 896px
+    top: $for_second_row_figcaption
+
+.Strings
+    @include For_Figcaption()
+    left: 1248px
+    top: $for_second_row_figcaption
+
+.Main_page_button
+    @include nav_bar_buttons()
+    left: 281px
+
+.Catalog_page_button
+    @include nav_bar_buttons()
+    left: 647px
+
+.About_Us_page_button
+    @include nav_bar_buttons()
+    left: 1028px
+
+
+@keyframes changing__color_of_button
+    0%            
+        background: $black_color
+        color: $white_color
+    100%
+        background: $white_color
+        color: $black_color

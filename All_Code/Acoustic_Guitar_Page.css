@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+header {
+  position: absolute;
+  width: 1510px;
+  height: 107px;
+  left: 0px;
+  top: 0px;
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  width: 206px;
+  height: 53px;
+  left: 47px;
+  top: 35px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.Main_page_button {
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24pt;
+  position: absolute;
+  width: 241px;
+  height: 55px;
+  background: #000;
+  border: 2px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 29px;
+  left: 281px;
+}
+
+.Main_page_button:hover {
+  -webkit-animation: changing__color_of_button 0.3s linear forwards;
+          animation: changing__color_of_button 0.3s linear forwards;
+}
+
+.Catalog_page_button {
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24pt;
+  position: absolute;
+  width: 241px;
+  height: 55px;
+  background: #000;
+  border: 2px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 29px;
+  left: 647px;
+}
+
+.Catalog_page_button:hover {
+  -webkit-animation: changing__color_of_button 0.3s linear forwards;
+          animation: changing__color_of_button 0.3s linear forwards;
+}
+
+.About_Us_page_button {
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24pt;
+  position: absolute;
+  width: 241px;
+  height: 55px;
+  background: #000;
+  border: 2px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 29px;
+  left: 1028px;
+}
+
+.About_Us_page_button:hover {
+  -webkit-animation: changing__color_of_button 0.3s linear forwards;
+          animation: changing__color_of_button 0.3s linear forwards;
+}
+
+@-webkit-keyframes changing__color_of_button {
+  0% {
+    background: #000;
+    color: #fff;
+  }
+  100% {
+    background: #fff;
+    color: #000;
+  }
+}
+
+@keyframes changing__color_of_button {
+  0% {
+    background: #000;
+    color: #fff;
+  }
+  100% {
+    background: #fff;
+    color: #000;
+  }
+}
+/*# sourceMappingURL=Acoustic_Guitar_Page.css.map */

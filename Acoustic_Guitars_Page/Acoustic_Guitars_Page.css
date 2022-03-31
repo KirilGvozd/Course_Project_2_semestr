@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 header {
   position: absolute;
-  width: 1510px;
+  width: 1536px;
   height: 107px;
   left: 0px;
   top: 0px;
@@ -10,6 +10,33 @@ header {
 
 a {
   text-decoration: none;
+}
+
+figcaption {
+  position: absolute;
+  width: 152px;
+  height: 58px;
+  top: 733px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.First_Guitar {
+  left: 168px;
+}
+
+.Second_Guitar {
+  left: 685px;
 }
 
 .logo {
@@ -103,6 +130,24 @@ a {
 .About_Us_page_button:hover {
   -webkit-animation: changing__color_of_button 0.3s linear forwards;
           animation: changing__color_of_button 0.3s linear forwards;
+}
+
+.First_Photo {
+  position: absolute;
+  width: 300px;
+  height: 583px;
+  border: 2px solid #000000;
+  left: 94px;
+  top: 138px;
+}
+
+.Second_Photo {
+  position: absolute;
+  width: 300px;
+  height: 583px;
+  border: 2px solid #000000;
+  left: 608px;
+  top: 138px;
 }
 
 @-webkit-keyframes changing__color_of_button {

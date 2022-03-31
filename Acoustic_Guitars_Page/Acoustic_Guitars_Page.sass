@@ -5,6 +5,7 @@ $center_align: center
 $font_roboto: 'Roboto', sans-serif
 $black_color: #000
 $white_color: #fff
+$for_first_row: 138px
 
 
 @mixin hover_code()
@@ -27,10 +28,16 @@ $white_color: #fff
         align-items: $center_align
         top: 29px
 
+@mixin For_Images()
+        position: absolute
+        width: 300px
+        height: 583px
+        border: 2px solid #000000    
+
 
 header
     position: $position 
-    width: 1510px   
+    width: 1536px   
     height: 107px
     left: 0px
     top: 0px
@@ -38,6 +45,26 @@ header
 
 a
     text-decoration: none
+
+figcaption
+    position: absolute
+    width: 152px
+    height: 58px
+    top: 733px
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 28px
+    display: flex
+    align-items: center
+    text-align: center
+
+.First_Guitar
+    left: 168px
+.Second_Guitar
+    left: 685px
+
 
 .logo
     position: $position
@@ -65,6 +92,16 @@ a
 .About_Us_page_button
     @include nav_bar_buttons()
     left: 1028px
+
+.First_Photo
+    @include For_Images()
+    left: 94px
+    top: $for_first_row
+
+.Second_Photo
+    @include For_Images()
+    left: 608px
+    top: $for_first_row
 
 
 @keyframes changing__color_of_button

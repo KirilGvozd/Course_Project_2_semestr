@@ -35,17 +35,31 @@ $white_color: #fff
         line-height: 28px
         text-align: justify
         color: $black_color
-
+    
 a
     text-decoration: none
 
 header
     position: $position 
-    width: 1515px   
-    height: 107px
+    width: 100%
+    height: auto
     left: 0px
     top: 0px
     background: $black_color
+
+
+.menu
+    display: grid
+    grid-template-columns: 25% 25% 25% 25%
+    a 
+        margin: 0 0
+        text-align: center
+        padding-left: 5% 
+        padding-right: 5%
+        font-size: 200%
+        line-height: 300%
+
+
 
 .logo
     position: $position
@@ -124,3 +138,14 @@ header
     100%
         background: $white_color
         color: $black_color
+
+@media (max-width: 700px)   
+    .menu
+        display: grid
+        grid-template-columns: 100%
+
+@media (min-width: 700px) and (max-width: 1100px)
+        .menu
+            display: grid
+            grid-template-columns: 50% 50%
+

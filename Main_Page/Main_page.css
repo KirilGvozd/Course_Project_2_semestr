@@ -4,119 +4,55 @@ a {
 }
 
 header {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   position: absolute;
   width: 100%;
   height: auto;
   left: 0px;
   top: 0px;
-  background: #000;
+  background: #fff;
 }
 
 .menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
 }
 
 .menu a {
-  margin: 0 0;
+  color: #fff;
+  text-decoration: none;
+  line-height: 300%;
+  padding: 0 5%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 200%;
+  line-height: 28px;
   text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
   font-size: 200%;
   line-height: 300%;
 }
 
-.logo {
-  position: absolute;
-  width: 206px;
-  height: 53px;
-  left: 47px;
-  top: 35px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #fff;
-}
-
-.Main_page_button {
-  padding: 5px;
+.Main_Page,
+.About_Us,
+.Catalog {
+  margin: 5% 5%;
+  border: 2px solid #000;
   font-family: "Roboto", sans-serif;
   font-size: 24pt;
-  position: absolute;
-  width: 241px;
-  height: 55px;
   background: #000;
-  border: 2px solid #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   color: #fff;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 29px;
-  left: 281px;
 }
 
-.Main_page_button:hover {
-  -webkit-animation: changing__color_of_button 0.3s linear forwards;
-          animation: changing__color_of_button 0.3s linear forwards;
-}
-
-.Catalog_page_button {
-  padding: 5px;
-  font-family: "Roboto", sans-serif;
-  font-size: 24pt;
-  position: absolute;
-  width: 241px;
-  height: 55px;
-  background: #000;
-  border: 2px solid #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #fff;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 29px;
-  left: 647px;
-}
-
-.Catalog_page_button:hover {
-  -webkit-animation: changing__color_of_button 0.3s linear forwards;
-          animation: changing__color_of_button 0.3s linear forwards;
-}
-
-.About_Us_page_button {
-  padding: 5px;
-  font-family: "Roboto", sans-serif;
-  font-size: 24pt;
-  position: absolute;
-  width: 241px;
-  height: 55px;
-  background: #000;
-  border: 2px solid #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #fff;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 29px;
-  left: 1028px;
-}
-
-.About_Us_page_button:hover {
+.Main_Page:hover,
+.About_Us:hover,
+.Catalog:hover {
   -webkit-animation: changing__color_of_button 0.3s linear forwards;
           animation: changing__color_of_button 0.3s linear forwards;
 }
@@ -219,14 +155,20 @@ header {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
+  .menu a {
+    margin: 0.2% 0.5%;
+  }
 }
 
 @media (min-width: 700px) and (max-width: 1100px) {
   .menu {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .menu a {
+    margin: 0.2% 0.5%;
   }
 }
 /*# sourceMappingURL=Main_page.css.map */

@@ -1,137 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-$position: absolute
-$center_align: center
-$font_roboto: 'Roboto', sans-serif
-$black_color: #000
-$white_color: #fff
-
-@mixin hover_code()
-        &:hover
-            animation: changing__color_of_button 0.3s linear forwards
-
-@mixin nav_bar_buttons()
-        @include hover_code()
-        font-family: $font_roboto
-        font-size: 24pt
-        background: $black_color
-        color: $white_color
-
-@mixin For_Text()
-        position: $position
-        font-family: $font_roboto
-        font-style: normal
-        font-weight: 400
-        font-size: 24px
-        line-height: 28px
-        text-align: justify
-        color: $black_color
-    
-a
-    text-decoration: none
-
-header
-    border-top: 1px solid $black_color
-    border-bottom: 1px solid #000
-    position: $position 
-    width: 100%
-    height: auto
-    left: 0px
-    top: 0px
-    background: #fff
-
-
-.menu
-    align-items: center
+.Container
+    border: 1px solid black
     display: grid
-    grid-template-columns: 33% 33% 33%
-    a 
-        color: #fff
-        text-decoration: none
-        line-height: 300%
-        padding: 0 5%
-        font-family: 'Roboto'
-        font-style: normal
-        font-weight: 600
-        font-size: 200%     
-        line-height: 28px
-        text-align: center
-        font-size: 200%
-        line-height: 300%
+    height: 100vh
+    grid-template-columns: 100%, repeat(3, 25%)
+    grid-template-rows: 0.2fr 0.5fr 0.7fr 0.5fr 0.6fr
+
+img
+    width: 100%
+    height: 100%
+
+nav
+    display: grid
+    text-align: center
+    grid-template-columns: repeat(4, 25%)
 
 
-
-.Main_Page,
-.About_Us,
-.Catalog,
-    margin: 5% 5%
-    border: 2px solid #000
-    @include nav_bar_buttons()
-
-
-
-.About_Music
-    @include For_Text()
-    width: 733px
-    height: 252px
-    left: 124px
-    top: 162px
-
-.Musical_Instruments
-    @include For_Text()
-    width: 588px
-    height: 252px
-    left: 865px
-    top: 470px
-
-.About_Store
-    @include For_Text()
-    width: 588px
-    height: 334px
-    left: 88px
-    top: 851px
+@media screen and (max-width: 700px)
+    .Container
+        grid-template-columns: 100%
     
-
-.Photo_1
-    position: $position
-    width: 317px
-    height: 310px
-    left: 1000px
-    top: 133px
-
-.Photo_2
-    position: $position
-    width: 650px
-    height: 263px
-    left: 88px
-    top: 473px
-
-.Photo_3
-    position: $position
-    width: 626px
-    height: 418px
-    left: 738px
-    top: 776px
-    
-@keyframes changing__color_of_button
-    0%            
-        background: $black_color
-        color: $white_color
-    100%
-        background: $white_color
-        color: $black_color
-
-@media (max-width: 700px)   
-        .menu
-            display: grid
-            grid-template-columns: 100%
-            a
-                margin: 0.2% 0.5%
-
-@media (min-width: 700px) and (max-width: 1100px)
-        .menu
-            display: grid
-            grid-template-columns: 100%
-            a
-                margin: 0.2% 0.5%
-

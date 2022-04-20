@@ -1,23 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .Container
-    border: 1px solid black
+    grid-row-gap: 2%
+    font-family: 'Roboto', sans-serif
     display: grid
     height: 100vh
-    grid-template-columns: 100%, repeat(3, 25%)
-    grid-template-rows: 0.2fr 0.5fr 0.7fr 0.5fr 0.6fr
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 0.3fr 1.5fr 0.5fr 0.6fr
 
 img
     width: 100%
     height: 100%
 
 nav
+    background: #000
+    color: #fff 
+    grid-column-start: 1
+    grid-column-end: 5
     display: grid
+    align-content: center
     text-align: center
     grid-template-columns: repeat(4, 25%)
 
 
+#First_Text
+    width: 75%
+    grid-column-start: 1
+    grid-column-end: 3
+#First_image
+    width: 50%
+    grid-column-start: 3 
+    grid-column-end: 5
+
+
 @media screen and (max-width: 700px)
     .Container
+        grid-template-columns: repeat(4, 25%)
+    nav
         grid-template-columns: 100%
+        
     

@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .Container {
-  border: 1px solid black;
+  grid-row-gap: 2%;
+  font-family: 'Roboto', sans-serif;
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -ms-grid-columns: 100%, (25%)[3];
-      grid-template-columns: 100%, repeat(3, 25%);
-  -ms-grid-rows: 0.2fr 0.5fr 0.7fr 0.5fr 0.6fr;
-      grid-template-rows: 0.2fr 0.5fr 0.7fr 0.5fr 0.6fr;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 0.3fr 1.5fr 0.5fr 0.6fr;
+      grid-template-rows: 0.3fr 1.5fr 0.5fr 0.6fr;
 }
 
 img {
@@ -16,15 +17,40 @@ img {
 }
 
 nav {
+  background: #000;
+  color: #fff;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
   display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
   text-align: center;
   -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
 }
 
+#First_Text {
+  width: 75%;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#First_image {
+  width: 50%;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+}
+
 @media screen and (max-width: 700px) {
   .Container {
+    -ms-grid-columns: (25%)[4];
+        grid-template-columns: repeat(4, 25%);
+  }
+  nav {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }

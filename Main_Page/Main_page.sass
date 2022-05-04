@@ -6,85 +6,6 @@
     padding: 0
     margin: 0
 
-.Container
-    font-size: 28px
-    grid-row-gap: 2%
-    font-family: 'Roboto', sans-serif
-    display: grid
-    height: 100vh
-    grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: 10vh 1.5fr 0.5fr 0.6fr
-
-img
-    width: 100%
-    height: 100%
-
-nav
-    border-bottom: 2px solid #000
-    margin-top: 4%
-    padding-right: 7% 
-    padding-bottom: 4%
-    grid-column-start: 1
-    grid-column-end: 5
-    display: grid
-    align-content: center
-    text-align: center
-    grid-template-columns: repeat(4, 25%)
-
-a   
-    color: #fff
-    text-decoration: none
-    &:hover
-        animation: Navbar_Buttons_Animations 0.5s linear forwards
-
-#First_Text
-    display: flex
-    align-items: center
-    padding-left: 25%
-    padding-top: 10% 
-    width: 75%
-    grid-column-start: 1
-    grid-column-end: 3
-#First_image
-    display: flex
-    align-items: center
-    padding-top: 10%
-    padding-left: 15% 
-    width: 50%
-    height: 80%
-    grid-column-start: 3 
-    grid-column-end: 5
-
-#Second_Image
-    padding-top: 5%
-    display: flex
-    align-items: center
-    grid-column-start: 1
-    grid-column-end: 3
-#Second_Text
-    display: flex
-    padding-top: 5%
-    padding-left: 5%
-    align-items: center
-    grid-column-start: 3 
-    grid-column-end: 5
-
-#Third_Text
-    display: flex
-    padding-top: 10%
-    padding-left: 10%
-    align-items: center
-    grid-column-start: 1
-    grid-column-end: 3
-#Third_Image
-    display: flex
-    width: 80%
-    padding-top: 5%
-    padding-left: 10%
-    padding-bottom: 5%
-    align-items: center
-    grid-column-start: 3 
-    grid-column-end: 5
 
 .Logo
     margin-top: 2%
@@ -99,6 +20,70 @@ a
     color: #fff
     &:hover
         animation: Navbar_Buttons_Animations 0.5s linear forwards
+.Container
+    font-size: 28px
+    grid-row-gap: 2%
+    font-family: 'Roboto', sans-serif
+    display: grid
+    height: 100vh
+    grid-template-columns: repeat(4, 25%)
+    grid-template-rows: 10vh 1.5fr 0.5fr 0.6fr
+
+
+img
+    width: 100%
+    height: 100%
+nav
+    border-bottom: 2px solid #000
+    margin-top: 4%
+    padding-right: 7% 
+    padding-bottom: 4%
+    grid-column-start: 1
+    grid-column-end: 5
+    display: grid
+    align-content: center
+    text-align: center
+    grid-template-columns: repeat(4, 25%)
+a   
+    color: #fff
+    text-decoration: none
+    &:hover
+        animation: Navbar_Buttons_Animations 0.5s linear forwards
+
+#First_Text
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-left: 7%
+    padding-top: 5% 
+    padding-bottom: 3%
+    width: 85%  
+    grid-column-start: 1
+    grid-column-end: 5
+#First_image
+    padding-left: 12% 
+    width: 300px
+    display: flex
+    align-items: center
+#Second_Text
+    display: flex
+    padding-left: 7%
+    align-items: center
+    grid-column-start: 1
+    grid-column-end: 5
+#Second_Image
+    width: 550px
+#Third_Text
+    display: flex
+    padding-top: 2%
+    padding-bottom: 5%
+    padding-left: 7% 
+    align-items: center
+    grid-column-start: 1
+    grid-column-end: 5
+#Third_Image
+    padding-left: 5% 
+    width: 500px
 
 
 @keyframes Navbar_Buttons_Animations
@@ -109,3 +94,66 @@ a
         border: 2px solid #000
         background: #fff
         color: #000
+
+
+@media (min-width:  800px) and (max-width: 1200px)
+    #First_Text
+        width: 90%
+    #First_Image
+        width: 300px
+        height: 50%
+    #Second_Image
+        height: 300px
+        width: 300px
+    #Third_Image
+        width: 300px
+        height: 75%
+        padding-right: 2%
+    
+
+@media screen and ( max-width:  800px)
+    .Container
+        font-size: 28px
+        grid-row-gap: 2%
+        font-family: 'Roboto', sans-serif
+        display: grid
+        height: 100vh
+        grid-template-columns: 100%
+        grid-template-rows: repeat(4, 0.1fr)
+    nav
+        grid-template-columns: 100%
+        margin-top: 4%
+        padding-right: 0
+        padding-bottom: 0
+        grid-column-start: 1
+        grid-column-end: 2
+    img
+        width: 100%
+        height: auto
+    #First_Text
+        flex-wrap: wrap
+        justify-content: center
+        padding-left: 1%
+        padding-top: 0 
+        width: 100%
+        grid-column-start: 1
+        grid-column-end: 2
+    #First_image
+        padding-top: 0
+        width: 65%
+        height: auto
+    .Logo
+        margin-top: 0
+        padding-right: 0
+    #Second_Text
+        flex-wrap: wrap
+        justify-content: center
+        padding-top: 5%
+        padding-left: 1%
+        align-items: center
+    #Third_Text
+        flex-wrap: wrap
+        justify-content: center
+        padding-left: 1%
+    #Third_Image
+        width: 80%

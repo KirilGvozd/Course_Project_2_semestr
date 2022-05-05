@@ -36,8 +36,8 @@
   height: 100vh;
   -ms-grid-columns: (25%)[4];
       grid-template-columns: repeat(4, 25%);
-  -ms-grid-rows: 10vh 1.5fr 0.5fr 0.6fr;
-      grid-template-rows: 10vh 1.5fr 0.5fr 0.6fr;
+  -ms-grid-rows: 15vh 1.5fr 0.5fr 0.6fr;
+      grid-template-rows: 15vh 1.5fr 0.5fr 0.6fr;
 }
 
 img {
@@ -47,9 +47,7 @@ img {
 
 nav {
   border-bottom: 2px solid #000;
-  margin-top: 4%;
   padding-right: 7%;
-  padding-bottom: 4%;
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 5;
@@ -83,7 +81,6 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 7%;
-  padding-top: 5%;
   padding-bottom: 3%;
   width: 85%;
   -ms-grid-column: 1;
@@ -223,6 +220,7 @@ a:hover {
     grid-column-end: 2;
   }
   #First_image {
+    padding-left: 0;
     padding-top: 0;
     width: 65%;
     height: auto;
@@ -232,6 +230,7 @@ a:hover {
     padding-right: 0;
   }
   #Second_Text {
+    width: 100vw;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -243,7 +242,11 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  #Second_Image {
+    width: 90%;
+  }
   #Third_Text {
+    width: 100vw;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;

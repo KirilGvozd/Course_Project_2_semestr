@@ -63,6 +63,8 @@ nav {
 a {
   color: #fff;
   text-decoration: none;
+  width: 80%;
+  height: 50%;
 }
 
 a:hover {
@@ -192,6 +194,11 @@ a:hover {
     -ms-grid-rows: (0.1fr)[4];
         grid-template-rows: repeat(4, 0.1fr);
   }
+  .Main_Page_Button,
+  .About_Us_Button,
+  .Catalog_Page_Button {
+    padding: 5% 0;
+  }
   nav {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -201,6 +208,9 @@ a:hover {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 2;
+  }
+  a {
+    width: 100vw;
   }
   img {
     width: 100%;

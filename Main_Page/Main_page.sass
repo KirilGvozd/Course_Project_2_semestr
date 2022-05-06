@@ -45,6 +45,8 @@ nav
 a   
     color: #fff
     text-decoration: none
+    width: 80%
+    height: 50%
     &:hover
         animation: Navbar_Buttons_Animations 0.5s linear forwards
 
@@ -117,6 +119,10 @@ a
         height: 100vh
         grid-template-columns: 100%
         grid-template-rows: repeat(4, 0.1fr)
+    .Main_Page_Button,
+    .About_Us_Button,
+    .Catalog_Page_Button
+        padding: 5% 0
     nav
         grid-template-columns: 100%
         margin-top: 4%
@@ -124,6 +130,8 @@ a
         padding-bottom: 0
         grid-column-start: 1
         grid-column-end: 2
+    a
+        width: 100vw
     img
         width: 100%
         height: auto

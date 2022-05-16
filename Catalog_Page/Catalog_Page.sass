@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+$border: 2px solid #000
+$white_color: #fff
+$black_color: #000
+$center_align: center
+
+@mixin Image_Animation()
+    &:hover
+        animation: Image_Scale 0.5s linear forwards
+
+
 *,
 *::after,
 *::before 
@@ -14,9 +24,9 @@
 .About_Us_Button,
 .Catalog_Page_Button,
     padding: 5%
-    border: 2px solid #fff
-    background: #000
-    color: #fff
+    border: $border
+    background: $black_color
+    color: $white_color
     text-decoration: none
     &:hover
         animation: Navbar_Buttons_Animations 0.5s linear forwards
@@ -38,13 +48,13 @@ nav
     grid-column-start: 1
     grid-column-end: 5
     display: grid
-    align-content: center
-    text-align: center
+    align-content: $center_align
+    text-align: $center_align
     grid-template-columns: repeat(4, 25%)
 figure
     font-weight: 900
     margin: auto
-    text-align: center
+    text-align: $center_align
 a
     width: 80%
     height: 50%
@@ -52,31 +62,44 @@ a
 .Item_1
     grid-column: 1
     grid-row: 2
+    @include Image_Animation()
 .Item_2
     grid-column: 2
     grid-row: 2
+    @include Image_Animation()
 .Item_3
     grid-column: 3
     grid-row: 2
+    @include Image_Animation()
 .Item_4
     grid-column: 1
     grid-row: 3
+    @include Image_Animation()
 .Item_5
     grid-column: 2
     grid-row: 3
+    @include Image_Animation()
 .Item_6
     grid-column: 3
     grid-row: 3
+    @include Image_Animation()
 
 
 @keyframes Navbar_Buttons_Animations
     0%
-        background: #000
-        color: #fff
+        background: $black_color
+        color: $white_color
     100%
-        border: 2px solid #000
-        background: #fff
-        color: #000
+        border: $border
+        background: $white_color
+        color: $black_color
+
+@keyframes Image_Scale
+    0%
+        transform: scale(1)
+    100%
+        transform: scale(1.05)
+        
 
 
 @media screen and ( max-width: 850px)

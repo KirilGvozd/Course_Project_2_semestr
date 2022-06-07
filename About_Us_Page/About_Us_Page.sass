@@ -28,9 +28,17 @@
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: 15vh 1.5fr 1fr 1fr
 
+header
+    width: 100vw
+    border-bottom: 2px solid #000
+    grid-column-start: 1
+    grid-column-end: 5
+    display: grid
+    align-content: center
+    text-align: center
+    grid-template-columns: repeat(4, 25%)
 
 nav
-    border-bottom: 2px solid #000
     padding-right: 7% 
     grid-column-start: 1
     grid-column-end: 5
@@ -118,6 +126,13 @@ figure
         width: 100vw
         margin: auto
         text-align: center
+    header
+        grid-template-columns: 100%
+        margin-top: 4%
+        padding-right: 0
+        padding-bottom: 0
+        grid-column-start: 1
+        grid-column-end: 2
     nav
         grid-template-columns: 100%
         margin-top: 4%

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <catalog>
+        <Acoustic_Guitar>
+           <image>"Catalog_Page/Photo_1_Catalog_Page.png"</image>
+           <name>Акустические гитары</name>
+        </Acoustic_Guitar>
+        <Electic_Guitar>
+           <image>"Catalog_Page/Photo_2_Catalog_Page.png"</image>
+            <name>Электро-гитары</name>
+        </Electic_Guitar>
+        <Acoustic_Bass_Guitar>
+           <image>"Catalog_Page/Photo_3_Catalog_Page.png"</image>
+            <name>Акустические бас-гитары</name>
+        </Acoustic_Bass_Guitar>
+        <Bass_Guitar>
+           <image>"Catalog_Page/Photo_4_Catalog_Page.png"</image>
+            <name>Бас-гитары</name>
+        </Bass_Guitar>
+        <Drum_Kit>
+           <image>"Catalog_Page/Photo_5_Catalog_Page.png"</image>
+            <name>Ударные установки</name>
+        </Drum_Kit>
+        <Amp>
+           <image>"Catalog_Page/Photo_6_Catalog_Page.png"</image>
+            <name>Комбоусилители для гитар</name>
+        </Amp>
+    </catalog>

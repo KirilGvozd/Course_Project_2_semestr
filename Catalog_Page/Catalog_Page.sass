@@ -24,10 +24,9 @@ $center_align: center
 .About_Us_Button,
 .Catalog_Page_Button,
     padding: 5%
-    border: $border
-    background: $black_color
-    color: $white_color
-    text-decoration: none
+    border: 2px solid #fff
+    background: #000
+    color: #fff
     &:hover
         animation: Navbar_Buttons_Animations 0.5s linear forwards
 .Container
@@ -41,21 +40,30 @@ $center_align: center
     grid-template-rows: 15vh 1fr 1fr
     grid-auto-flow: row
 
-
-nav
+header
+    width: 100vw
     border-bottom: 2px solid #000
+    grid-column-start: 1
+    grid-column-end: 5
+    display: grid
+    align-content: center
+    text-align: center
+    grid-template-columns: repeat(4, 25%)
+nav
     padding-right: 7% 
     grid-column-start: 1
     grid-column-end: 5
     display: grid
-    align-content: $center_align
-    text-align: $center_align
+    align-content: center
+    text-align: center
     grid-template-columns: repeat(4, 25%)
 figure
     font-weight: 900
     margin: auto
     text-align: $center_align
-a
+a   
+    color: #fff
+    text-decoration: none
     width: 80%
     height: 50%
 
@@ -121,6 +129,13 @@ a
         width: 100vw
         margin: auto
         text-align: center
+    header
+        grid-template-columns: 100%
+        margin-top: 4%
+        padding-right: 0
+        padding-bottom: 0
+        grid-column-start: 1
+        grid-column-end: 2
     nav
         grid-template-columns: 100%
         margin-top: 4%

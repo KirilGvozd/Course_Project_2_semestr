@@ -42,8 +42,22 @@
   grid-auto-flow: row;
 }
 
-nav {
+header {
+  width: 100vw;
   border-bottom: 2px solid #000;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+}
+
+nav {
   padding-right: 7%;
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -90,11 +104,21 @@ a {
   grid-row: 2;
 }
 
+.Item_1:hover {
+  -webkit-animation: Image_Scale 0.5s linear forwards;
+          animation: Image_Scale 0.5s linear forwards;
+}
+
 .Item_2 {
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 2;
   grid-row: 2;
+}
+
+.Item_2:hover {
+  -webkit-animation: Image_Scale 0.5s linear forwards;
+          animation: Image_Scale 0.5s linear forwards;
 }
 
 .Item_3 {
@@ -104,11 +128,21 @@ a {
   grid-row: 2;
 }
 
+.Item_3:hover {
+  -webkit-animation: Image_Scale 0.5s linear forwards;
+          animation: Image_Scale 0.5s linear forwards;
+}
+
 .Item_4 {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 3;
   grid-row: 3;
+}
+
+.Item_4:hover {
+  -webkit-animation: Image_Scale 0.5s linear forwards;
+          animation: Image_Scale 0.5s linear forwards;
 }
 
 .Item_5 {
@@ -118,11 +152,21 @@ a {
   grid-row: 3;
 }
 
+.Item_5:hover {
+  -webkit-animation: Image_Scale 0.5s linear forwards;
+          animation: Image_Scale 0.5s linear forwards;
+}
+
 .Item_6 {
   -ms-grid-column: 3;
   grid-column: 3;
   -ms-grid-row: 3;
   grid-row: 3;
+}
+
+.Item_6:hover {
+  -webkit-animation: Image_Scale 0.5s linear forwards;
+          animation: Image_Scale 0.5s linear forwards;
 }
 
 @-webkit-keyframes Navbar_Buttons_Animations {
@@ -146,6 +190,28 @@ a {
     border: 2px solid #000;
     background: #fff;
     color: #000;
+  }
+}
+
+@-webkit-keyframes Image_Scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@keyframes Image_Scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 
@@ -173,6 +239,16 @@ a {
     width: 100vw;
     margin: auto;
     text-align: center;
+  }
+  header {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    margin-top: 4%;
+    padding-right: 0;
+    padding-bottom: 0;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
   }
   nav {
     -ms-grid-columns: 100%;
